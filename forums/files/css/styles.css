@@ -1,0 +1,265 @@
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+blockquote {
+    padding: 6px 16px;
+    border: none;
+    quotes: "\201C" "\201D";
+    display: inline-block;
+}
+
+blockquote p:before { 
+    content: open-quote;
+    font-weight: bold;
+} 
+blockquote p:after { 
+    content: close-quote;
+    font-weight: bold;
+}
+
+body {
+    background: url(/files/images/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-width: 100%;
+}
+
+/*::-webkit-scrollbar {width: 0; visibility: none;}
+::-webkit-scrollbar-track {border-radius: 0; visibility: none;}
+::-webkit-scrollbar-thumb {border-radius: 0; visibility: none;}*/
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.header {
+    height: 100%;
+    text-align: center;
+    color: #fff;
+}
+.header .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header .content p {
+    max-width: 500px;
+    margin: 0 auto;
+    color: #F5876F;
+    font-weight: bolder;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+#content {
+    position: relative;
+    /*background-color: #D7D7D7;*/
+    background-color: #FFF;
+}
+
+.content-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1140px;
+    position: relative;
+    z-index: 2;
+}
+
+.section {
+    text-align: center;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    border-top: 3px #294D67 solid;
+    border-bottom: 3px #294D67 solid;
+    transition: all 1s ease-out;
+}
+.section p {
+    max-width: 300px;
+    margin: 0 auto;
+    color: #294D67;
+}
+#section2 {
+    background: url(/files/images/commandblocks.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-width: 100%;
+}
+img.ico {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: pixelated;
+}
+.thumbnail.ico {
+    border:none !important;
+    background: transparent !important;
+    box-shadow:none !important;
+}
+
+.row {
+    overflow: hidden;
+}
+
+.navbar-custom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: none;
+    border-radius: 0;;
+    width: 100%;
+    z-index: 1000;
+}
+
+.bg-white {
+    background: white;
+}
+.rolo {
+    padding-bottom: 55em;
+}
+.home {
+    background: url(../images/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 110%; 
+}
+
+.home-header {
+    padding-top: 10em;
+    padding-bottom: 30em;
+    /*color: #007FFF;*/
+    color: white;
+}
+
+.forums-header {
+    padding-top: 5em;
+    padding-bottom: 10em;
+    /*color: #007FFF;*/
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #06060d; 
+}
+.footer h3 {
+    margin: 0;
+    padding: 20px 20px;
+    font-weight: normal; 
+}
+.footer a {
+    color: rgba(255, 255, 255, 0.5); 
+}
+
+.player-head-table {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .home {
+        padding-top: 0;
+        padding-bottom: 5em; 
+    }
+
+    .rolo {
+        padding-bottom: 5em;
+    }
+
+    .home-header {
+        padding-top: 5em;
+        padding-bottom: 5em;
+        color: #007FFF;
+        color: white;
+    }
+    .staff-icons {
+        padding-bottom: 5em;
+    }
+}
